@@ -18,10 +18,7 @@ class AllGroupListTableViewController: UITableViewController {
         tableView.rowHeight = 100
         
     }
-    @IBAction func doneButtonPressed() {
-        delegate?.setUserGroups(userGroupList)
-    }
-
+   
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -60,7 +57,7 @@ class AllGroupListTableViewController: UITableViewController {
             userGroupList.remove(at: indexPath.row)
         }
         //tableView.reloadSections([0,1], with: .automatic)
-
+        delegate?.setUserGroups(userGroupList)
         let destinationIndexRow = indexPath.section == 0 ? IndexPath(row: groupList.count - 1, section: 1) : IndexPath(row: userGroupList.count - 1, section: 0)
         tableView.deselectRow(at: indexPath, animated: true)
         tableView.moveRow(at: indexPath, to: destinationIndexRow)

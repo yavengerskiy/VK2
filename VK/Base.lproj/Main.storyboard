@@ -280,13 +280,7 @@
                             <outlet property="delegate" destination="9Yx-jr-0z0" id="b6p-QL-HPI"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Change Group" id="PqF-Pw-92c">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="Tgi-0f-mww">
-                            <connections>
-                                <action selector="doneButtonPressed" destination="9Yx-jr-0z0" id="IHZ-MT-0gD"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Change Group" id="PqF-Pw-92c"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xVE-vw-JTE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
