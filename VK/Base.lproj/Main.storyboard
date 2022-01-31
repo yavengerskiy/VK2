@@ -95,11 +95,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="baQ-09-yGw" customClass="AlphabetUiControl" customModule="VK" customModuleProvider="target">
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="aBz-wk-uaY">
                             <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        </view>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell1" id="cLZ-Oe-6K4">
                                 <rect key="frame" x="0.0" y="88.666666030883789" width="390" height="43.666667938232422"/>
@@ -121,6 +121,9 @@
                     <navigationItem key="navigationItem" title="table view" id="Fzb-vH-Xxe">
                         <barButtonItem key="backBarButtonItem" title="Back" id="Bb0-n6-ggn"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="searchBar" destination="aBz-wk-uaY" id="beb-W0-xvB"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Bz-Xf-UbS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
