@@ -29,7 +29,6 @@ class FriendsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         var countOfRows = 0
-        // сравниваем массив букв и заглавные буквы каждого имени, выводим количество ячеек в соотвествии именам на отдельную букву
         for name in namesListModifed {
             if letersOfNames[section].contains(name.first!) {
                 countOfRows += 1
@@ -39,10 +38,8 @@ class FriendsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        // получить ячейку класса FriendTableViewCell
         guard let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as? FriendsListTableViewCell else { return UITableViewCell() }
 
-        // задать имя пользователя (ищет по буквам для расстановки по секциям) + сортировка по алфавиту
         cell.titleLabel.text = getNameFriendForCell(indexPath)
         cell.avatarImageView.image = UIImage(named: getAvatarFriendForCell(indexPath))
         

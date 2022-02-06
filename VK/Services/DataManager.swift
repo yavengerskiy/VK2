@@ -41,4 +41,21 @@ class DataManager {
         groupsList.append(group3)
         return groupsList
     }
+    
+    func createTestNews() -> [PostNews] {
+        let user1 = User(login: "Angelina", name: "Анджелина Джоли", password: "", photos: ["angelina", "angelina2", "angelina3", "angelina4"], groups: [], friendsList: [])
+        let user2 = User(login: "Anne", name: "Энн Хэтэуэй", password: "", photos: ["anne4", "anne2", "anne3", "anne"], groups: [], friendsList: [])
+        var postNewsList:[PostNews] = []
+        let postNew1 = PostNews(creator: user1,
+                                date: "34 минуты назад",
+                                textNews: "Сможет ли Fiat Panda стать лидером в сегменте недорогих электромобилей?",
+                                textImage: "6-6")
+        postNewsList.append(postNew1)
+        let postNew2 = PostNews(creator: user2,
+                                date: "02.02.2022 в 20:02",
+                                textNews: "Электромобиль Lightyear One с солнечными панелями имеет запас хода 708 км",
+                                textImage: "10-3")
+        postNewsList.append(postNew2)
+        return postNewsList
+    }
 }
