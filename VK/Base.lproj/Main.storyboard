@@ -65,22 +65,12 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0EM-2y-iu0" customClass="LoadingView" customModule="VK" customModuleProvider="target">
-                                <rect key="frame" x="155" y="587" width="80" height="20"/>
-                                <color key="backgroundColor" red="0.28627452250000002" green="0.42745098469999998" blue="0.55294120309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="7PM-hI-s5j"/>
-                                    <constraint firstAttribute="height" constant="20" id="cGV-CR-tJJ"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.34390252830000001" green="0.5114124417" blue="0.66276413199999995" alpha="0.83177680211351412" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zfw-u0-HPH" secondAttribute="trailing" constant="30" id="9uW-Bw-Ivt"/>
                             <constraint firstItem="zfw-u0-HPH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="VEn-fS-zzr"/>
-                            <constraint firstItem="0EM-2y-iu0" firstAttribute="top" secondItem="MeD-Cz-rXM" secondAttribute="bottom" constant="7.6666666666667425" id="gYg-yt-gc6"/>
-                            <constraint firstItem="0EM-2y-iu0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hBB-st-hmo"/>
                             <constraint firstItem="zfw-u0-HPH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hCz-TE-ycq"/>
                         </constraints>
                     </view>
