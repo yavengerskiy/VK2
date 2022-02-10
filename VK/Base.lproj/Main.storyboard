@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,30 +12,30 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="VK" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="zfw-u0-HPH">
-                                <rect key="frame" x="30" y="265" width="330" height="314.33333333333326"/>
+                                <rect key="frame" x="30" y="83" width="260" height="314.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="8cfb76c8af04b72de1096c55862ae518" translatesAutoresizingMaskIntoConstraints="NO" id="Aum-DK-TCZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="330" height="128"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="260" height="128"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="128" id="S8J-u7-2lt"/>
                                         </constraints>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="User" borderStyle="roundedRect" placeholder="Почта или телефон" textAlignment="natural" minimumFontSize="23" translatesAutoresizingMaskIntoConstraints="NO" id="yNt-z2-Kcq">
-                                        <rect key="frame" x="0.0" y="143" width="330" height="34"/>
+                                        <rect key="frame" x="0.0" y="143" width="260" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" textContentType="email"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="23" translatesAutoresizingMaskIntoConstraints="NO" id="vY0-W6-6E5">
-                                        <rect key="frame" x="0.0" y="192" width="330" height="34"/>
+                                        <rect key="frame" x="0.0" y="192" width="260" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="psG-5o-muG">
-                                        <rect key="frame" x="0.0" y="241" width="330" height="31"/>
+                                        <rect key="frame" x="0.0" y="241" width="260" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Войти"/>
                                         <connections>
@@ -43,10 +43,10 @@
                                         </connections>
                                     </button>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="MeD-Cz-rXM">
-                                        <rect key="frame" x="0.0" y="287" width="330" height="27.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="287" width="260" height="27.5"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pcq-vu-b6Z">
-                                                <rect key="frame" x="0.0" y="0.0" width="94" height="27.333333333333332"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="94" height="27.5"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Регистрация">
@@ -54,7 +54,7 @@
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fvt-N7-SFP">
-                                                <rect key="frame" x="224.66666666666666" y="0.0" width="105.33333333333334" height="27.333333333333332"/>
+                                                <rect key="frame" x="154.5" y="0.0" width="105.5" height="27.5"/>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="plain" title="Забыли пароль?">
@@ -65,22 +65,12 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0EM-2y-iu0" customClass="LoadingView" customModule="VK" customModuleProvider="target">
-                                <rect key="frame" x="155" y="587" width="80" height="20"/>
-                                <color key="backgroundColor" red="0.28627452250000002" green="0.42745098469999998" blue="0.55294120309999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="7PM-hI-s5j"/>
-                                    <constraint firstAttribute="height" constant="20" id="cGV-CR-tJJ"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.34390252830000001" green="0.5114124417" blue="0.66276413199999995" alpha="0.83177680211351412" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zfw-u0-HPH" secondAttribute="trailing" constant="30" id="9uW-Bw-Ivt"/>
                             <constraint firstItem="zfw-u0-HPH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="VEn-fS-zzr"/>
-                            <constraint firstItem="0EM-2y-iu0" firstAttribute="top" secondItem="MeD-Cz-rXM" secondAttribute="bottom" constant="7.6666666666667425" id="gYg-yt-gc6"/>
-                            <constraint firstItem="0EM-2y-iu0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hBB-st-hmo"/>
                             <constraint firstItem="zfw-u0-HPH" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hCz-TE-ycq"/>
                         </constraints>
                     </view>
