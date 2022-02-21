@@ -28,7 +28,7 @@ class LoginViewController: UIViewController {
     private  func checkForValidationData() -> Bool {
         
         if login.text == "User", password.text ==  "123456" {
-            showAlert(title: "Congrats!", message: "All correct. To be continued ...")
+            // showAlert(title: "Congrats!", message: "All correct. To be continued ...")
             return true
         }
         showAlert(title: "Incorrect Login or Password 🥲", message: "Please try again with login: User \nand password: 123456 ")
